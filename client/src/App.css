@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+a{
+  color: black!important;
+}
+.nav-links{
+  color: black;
+  font-size: large;
+}
+
+
+.nav-links-login{
+  size: 2rem;
+}
+.mycard{
+  margin-top:5% ;
+}
+.auth-card{
+  padding: 1.5rem;
+  text-align: center;
+  max-width: 600px;
+  margin:10px auto;
+}
+.input-field:focus{
+  border-bottom: 1px solid rgb(8, 93, 252)!important;
+  box-shadow: 0 1px 0 0  rgb(8, 93, 252)!important;
+}
+.textarea{
+  min-width: 97%;
+  max-width: 97%;
+  min-height: 250px;
+  
+}
+.home-container{
+  margin: 2%;
+}
+body{
+  overflow-x: hidden;
+}
+.nav-bar{
+z-index: 999;
+margin:0 0 2% 0;
+padding: 1%;
+width: 100%;
+
+}
+.gallery{
+  display: flex;
+  gap:1rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+.textarea{
+  width: 80%;
+  
+}
+.create-post-container{
+  align-items: center;
+}
+.create-post-div{
+  max-width: 60%;
+
+}
+.home-card{
+  
+  height: 100%;
+  margin: 26px auto;
+  display: flex;
+}
+.card-image img{
+width:300px;
+height: 300px;
+object-fit: cover;
+}
+.proflie-main-div{
+  max-width: 70%;
+  margin: 0 auto;
+}
+@media(max-width:700px){
+  .proflie-main-div{
+    max-width: 100%;
+  }
+  .create-post-div{
+    max-width: 90%;
+  }
+  .auth-card{
+    max-width: 80%;
+  }
+}
+.home-card{
+  padding: 1rem;
+width:95%;
+flex-direction: row;
+}
+.item{
+  width: 30%;
+
+}
+
+.form-container{
+  width:70% !important;
+  border: 3px solid rgb(240, 239, 239) !important;
+  border-radius: 2px!important;
+  margin: 5% auto!important;
+  vertical-align: auto!important;
+  background-color: #fff8!important;
+ 
+}
+@media (max-width:700px) {
+  .form-container{
+    width:90%;
+   
+  }
+  
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.nav-wrapper {
+  padding: 0 20px;
+}
+.navbar .brand-logo {
+  font-size: 1.5rem;
+  margin-left: 20px;
+  color: #000; /* Add desired color */
+  font-weight: bold; /* Add desired font weight */
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li {
+  margin-right: 10px;
+}
+
+.navbar ul li a {
+  color: #000; /* Add desired color */
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar ul li a:hover {
+  color: #ff5722; /* Add desired hover color */
+}
+
+.menu-icon {
+  display: none;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .nav-links {
+  display: block;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar .nav-wrapper,
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+
+  .navbar ul li:last-child {
+    margin-bottom: 20px;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .sidenav {
+    position: absolute;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    background-color: #fff; /* Add desired background color */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .sidenav.active {
+    transform: translateX(200px);
+  }
+}
