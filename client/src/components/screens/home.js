@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import UserHome from './userHome';
 import GuidePage from './guidePage';
 function Home() {
   const [data, setData] = useState([]);
@@ -13,7 +14,7 @@ NO USER FOUND
     if(user.userType==="user") 
     return (
       <div className='home-container'>
-USER HOME
+      <UserHome/>
       </div>
     );
     if(user.userType==="guide") 
