@@ -28,7 +28,7 @@ For detailed instructions, guidelines, and information.
 
 ## Getting Started
 
-To get started with SocialSphere, follow these steps:
+To get started with Get Guide, follow these steps:
 
 1. Open another terminal and navigate to the `server` folder within the project directory.
 2. Run the following command to install the necessary npm packages for the server:
